@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Johny Tumanggor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Base Styles */
+        :root {
+            --primary: #2ecc71;
+            --secondary: #27ae60;
+            --dark: #2c3e50;
+            --light: #ecf0f1;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: var(--dark);
+            color: var(--light);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 2rem;
+            background: linear-gradient(45deg, var(--dark), #34495e);
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 2rem;
+            border: 5px solid var(--primary);
+            transition: transform 0.3s;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Sections */
+        section {
+            padding: 5rem 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--primary);
+        }
+
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        /* Contact */
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            font-size: 2rem;
+            color: var(--light);
+            transition: color 0.3s;
+            text-decoration: none;
+        }
+
+        .social-link:hover {
+            color: var(--primary);
+        }
+
+        .card {
+             width: 300px; /* Sesuaikan dengan ukuran kartu */
+             margin: 10px;
+        }
+        .card img {
+             width: 100%;
+             height: auto;
+        }
+        .redirect-box {
+             background-color: #0078d4; /* Warna kotak */
+             padding: 10px;
+             text-align: center;
+        }
+        .redirect-box a {
+             color: white;
+             text-decoration: none;
+             font-weight: bold;
+        }
+        .redirect-box a:hover {
+             text-decoration: underline;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate {
+            animation: fadeIn 1s ease-out;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 1rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content animate">
+            <img src="Gambar/Gambar1.jpeg" alt="Foto Profil" class="profile-img">
+            <h1>Halo, Saya Johny Tumanggor</h1>
+            <p>Penggiat Conten Creator Facebook</p>
+            <div class="contact-links mt-2">
+                <a href="https://web.facebook.com/people/Johnny-Tumanggor" target="_blank" class="social-link">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <!-- Tambahkan media sosial lainnya -->
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title animate">Tentang Saya</h2>
+        <div class="about-content animate" style="max-width: 800px; margin: 0 auto;">
+            <p>
+                "Seorang pemula yang berani berbagi cerita, ide, dan kreativitas tanpa batas! Di sini, aku belajar, bertumbuh, dan menginspirasi lewat setiap postingan. Yuk, ikuti perjalananku membangun mimpi di Facebook, satu konten pada satu waktu!"
+            </p>
+            <h3 style="margin-top: 2rem;">Kemampuan</h3>
+            <div class="skills"> 
+                <ul>
+                <li><span class="skill-tag">Bermain Alat Musik</span></li>
+                <li> <span class="skill-tag">Bernyanyi</span></li>
+                <li><span class="skill-tag">Bersama membuat keunikan dan inspirasi</span></li>
+                </ul>
+                <!-- Tambahkan skill lainnya -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title animate">Proyek Terbaru</h2>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="card">
+                <img src="Gambar/facebook.png" alt="Foto Proyek">
+                <div class="redirect-box">
+                  <a href="https://www.facebook.com/share/r/15xNxYJ6Sj/" target="_blank">Klik untuk Lihat Selengkapnya</a>
+                </div>
+              </div>
+              
+            <div class="card">
+                <img src="Gambar/facebook.png" alt="Foto Proyek">
+                <div class="redirect-box">
+                  <a href="https://www.facebook.com/share/v/18EY4Y4uTh/" target="_blank">Klik untuk Lihat Selengkapnya</a>
+                </div>
+            </div>  
+              
+            <!-- Tambahkan proyek lainnya -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title animate">Hubungi Saya</h2>
+        <div class="contact-content animate" style="text-align: center;">
+            <p>Tertarik bekerja sama? Mari berdiskusi!</p>
+            <div class="contact-links" style="margin-top: 2rem;">
+                <a href="mailto:email@domain.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Animasi saat scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section').forEach((section) => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
